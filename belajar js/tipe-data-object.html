@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Tipe Data Object</title>
+</head>
+<body>
+<script>
+
+    const person ={
+        "nama lengkap" : "Ikhsan Fadilah",
+        alamat : "Bandung",
+        umur : 22
+    };
+
+    // ubah property / atribute
+    // person["nama"] = "Ikhsan Fadilah";
+    // person["alamat"] = "Bandung";
+    // person["umur"] = 30;
+
+    console.info(`Nama : ${person["nama lengkap"]}`); //jika lebih dari 1 kata gunakan kurung kotak
+    console.info(`Alamat : ${person.alamat}`); //jika hanya 1 kata langsung seperti ini
+    console.info(`Umur : ${person.umur}`);
+
+    console.table(person);
+
+    delete person["umur"];
+
+    console.table(person);
+
+</script>
+</body>
+</html>
